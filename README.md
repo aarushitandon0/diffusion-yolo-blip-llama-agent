@@ -31,3 +31,43 @@ This project builds a synthetic Vision-Language dataset and uses it to power an 
 -  **LLaMA-3-8B** — Language model for reasoning about scenes
 -  **Python + JSONL** — Modular and reproducible dataset format
 
+## Sample Dataset Entry
+
+```json
+{
+  "image": "ultra-realistic_photo_of_a_person_hiding/20250705_212001_0.png",
+  "caption": "a person hiding something in their coat in a subway station",
+  "labels": {
+    "objects": ["person", "coat", "subway"],
+    "relation": "unknown"
+  }
+}
+```
+
+## Llama 3 Response Example 
+```
+ Together.ai Scene Reasoning (Text-Only):
+
+Based on the image description and objects detected, I'll answer your questions:
+
+1. What is happening in this scene?
+
+It appears that a person is walking down a subway platform, likely on their way to catch a train. They are likely heading to work, school, or another destination.
+
+2. Is this situation normal or suspicious?
+
+This situation is likely normal, as people frequently use public transportation like subways to get around. However, without more context, it's difficult to say for certain.
+
+3. What actions might follow?
+
+Some possible actions that might follow include:
+
+* The person reaches the end of the platform and boards the train.
+* They stop at a store or kiosk on the platform to buy something or grab a snack.
+* They check their phone or watch for any important messages or notifications.
+* They look around the platform to see if there are any delays or changes to the schedule.
+* They take out their handbag to gather their belongings or put on their coat before boarding the train.
+
+Of course, without more context, it's impossible to know for certain what actions will follow.
+```
+
