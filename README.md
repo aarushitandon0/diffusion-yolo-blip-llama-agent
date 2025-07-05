@@ -14,7 +14,7 @@ This project builds a synthetic Vision-Language dataset and uses it to power an 
 ### Goal:
 > Generate synthetic images → Detect objects → Caption scenes → Reason using LLMs
 
-## 🧠 Architecture Summary
+## Architecture Summary
 
 | Phase | Task | Tool Used |
 |-------|------|-----------|
@@ -22,3 +22,12 @@ This project builds a synthetic Vision-Language dataset and uses it to power an 
 | 2️ | Image captioning | `BLIP` |
 | 3️ | Object detection | `YOLOv8n` |
 | 4️ | Scene reasoning | `LLaMA-3 8B Instruct` via `Together.ai` API |
+
+## Tech Stack
+
+-  **Stable Diffusion** — Ultra-realistic text-to-image generator
+-  **YOLOv8n** — CNN-based object detection
+-  **BLIP** — Vision-Language model for automatic image captioning
+-  **LLaMA-3-8B** — Language model for reasoning about scenes
+-  **Python + JSONL** — Modular and reproducible dataset format
+
